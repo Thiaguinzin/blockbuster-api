@@ -4,7 +4,7 @@ const config = require('config')
 const db = config.get('db');
 
 module.exports = function() {
-    mongoose.connect(db)
+    mongoose.connect(process.env.DATABASE_URL ? process.env.DATABASE_URL : db)
         .then(() => {
             // console.log(`Connect to ${db}`);
         }, error => {
