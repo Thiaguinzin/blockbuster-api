@@ -1,0 +1,5 @@
+{
+    "name": "My express App",
+    "jwtPrivateKey": "22222",
+    "db": "mongodb://localhost/blockbuster"
+}

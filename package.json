@@ -1,0 +1,36 @@
+{
+  "name": "blockbuster-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll --verbose",
+    "test-rental": "jest tests/integration/rental.test.js",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "20.12.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "compression": "^1.8.0",
+    "config": "^3.3.12",
+    "debug": "^4.4.0",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "joi": "^17.13.3",
+    "joi-objectid": "^4.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.13.2",
+    "morgan": "^1.10.0",
+    "underscore": "^1.13.7",
+    "winston": "^3.17.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.1.0"
+  }
+}
